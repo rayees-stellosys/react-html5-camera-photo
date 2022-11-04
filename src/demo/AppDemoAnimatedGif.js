@@ -1,7 +1,6 @@
 import React from 'react';
 import Camera, { FACING_MODES } from '../lib';
 import './reset.css';
-import axios from 'axios';
 
 function App (props) {
   function handleTakePhoto (dataUri) {
