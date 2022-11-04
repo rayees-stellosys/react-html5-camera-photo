@@ -11,6 +11,7 @@ function App (props) {
     } else {
       alert('No');
     }
+    alert(dataUri);
     navigator.geolocation.getCurrentPosition(function (position) {
       alert(position.coords.latitude);
     });
