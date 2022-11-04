@@ -5,29 +5,19 @@ import axios from 'axios';
 
 function App (props) {
   function handleTakePhoto (dataUri) {
+    // Do stuff with the photo...
+    console.log('takePhoto');
+    if ('geolocation' in navigator) {
+      alert('Yes');
+    } else {
+      alert('No');
+    }
+    alert(dataUri);
     navigator.geolocation.getCurrentPosition(function (position) {
-      savePhotoDetails(position.coords, dataUri);
+      alert(position.coords.latitude);
     });
-  };
-  function savePhotoDetails (coords, dataUri) {
-    let inputData = {
-      'Latitude': coords.latitude,
-      'Longitude': coords.longitude,
-      'ImageUri': dataUri
-    };
-
-    let apiURL = `https://hk0euugzdg.execute-api.ap-southeast-1.amazonaws.com/production/takePhoto/createPhoto`;
-    return new Promise((resolve, reject) => {
-      axios.post(apiURL, inputData).then((response) => {
-        console.log('response', response);
-        resolve(response);
-      }).catch((err) => {
-        console.log('err', err);
-        reject(err);
-      });
-    });
-  };
-
+  }
+  
   return (
     <div>
       {
