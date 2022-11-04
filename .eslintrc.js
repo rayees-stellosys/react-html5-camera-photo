@@ -16,6 +16,9 @@ module.exports = {
     ],
     "rules": {
         "semi": [2, "always"],
-        // "no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": "off"
+
+      
     }
 };
