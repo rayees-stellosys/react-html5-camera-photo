@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
-    "buildHtml": "node scripts/buildHtml.js",
+    "build": "react-scripts build",
+    "buildHtml": "node scripts/buildHtml.js && mv build webapp",
     "buildNpm": "node scripts/buildNpm.js",
     "demo": "node scripts/demo.js",
     "predeployHtml": "npm run buildHtml",
