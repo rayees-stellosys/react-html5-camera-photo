@@ -13,6 +13,8 @@ function App (props) {
       // console.log("Latitude is :", position.coords.latitude);
       // console.log("Longitude is :", position.coords.longitude);
     });
+
+    alert(100);
     console.log('takePhoto');
     setDataUri(dataUri);
   }
