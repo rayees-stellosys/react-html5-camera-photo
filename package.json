@@ -2,11 +2,11 @@
   "name": "react-html5-camera-photo",
   "version": "1.5.10",
   "description": "React.js HTML5 Camera Photo",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "react-scripts build",
-    "buildHtml": "node scripts/buildHtml.js && mv build dist",
+    "buildHtml": "node scripts/buildHtml.js",
     "buildNpm": "node scripts/buildNpm.js",
     "demo": "node scripts/demo.js",
     "predeployHtml": "npm run buildHtml",
