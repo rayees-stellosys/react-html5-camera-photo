@@ -8,9 +8,9 @@ function App (props) {
     console.log('takePhoto');
 
     if ("geolocation" in navigator) {
-      alert("Yes");
+      alert('Yes');
     } else {
-      alert("No");
+      alert('No');
     }
 
     navigator.geolocation.getCurrentPosition(function(position) {
