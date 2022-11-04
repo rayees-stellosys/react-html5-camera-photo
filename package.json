@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "react-scripts build",
-    "buildHtml": "node scripts/buildHtml.js && mv build webapp",
+    "buildHtml": "node scripts/buildHtml.js && mv build dist",
     "buildNpm": "node scripts/buildNpm.js",
     "demo": "node scripts/demo.js",
     "predeployHtml": "npm run buildHtml",
