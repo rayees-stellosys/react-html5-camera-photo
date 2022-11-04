@@ -7,7 +7,7 @@ function App (props) {
     // Do stuff with the photo...
     console.log('takePhoto');
 
-    if ("geolocation" in navigator) {
+    if ('geolocation' in navigator) {
       alert('Yes');
     } else {
       alert('No');
