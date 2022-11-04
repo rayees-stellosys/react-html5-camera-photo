@@ -6,6 +6,19 @@ function App (props) {
   function handleTakePhoto (dataUri) {
     // Do stuff with the photo...
     console.log('takePhoto');
+
+    if ("geolocation" in navigator) {
+      alert("Yes");
+    } else {
+      alert("No");
+    }
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      alert(position.coords.latitude);
+      // console.log("Latitude is :", position.coords.latitude);
+      // console.log("Longitude is :", position.coords.longitude);
+    });
+
   }
 
   return (
