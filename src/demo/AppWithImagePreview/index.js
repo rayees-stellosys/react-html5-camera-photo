@@ -7,6 +7,12 @@ function App (props) {
   const [dataUri, setDataUri] = useState('');
 
   function handleTakePhotoAnimationDone (dataUri) {
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      alert(position.coords.latitude);
+      // console.log("Latitude is :", position.coords.latitude);
+      // console.log("Longitude is :", position.coords.longitude);
+    });
     console.log('takePhoto');
     setDataUri(dataUri);
   }
