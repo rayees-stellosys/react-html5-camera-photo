@@ -10,8 +10,6 @@ export const DisplayError = ({ isDisplayError, errorMsg, cssClass }) => {
   if (!isShowComponent(isDisplayError, errorMsg)) {
     return null;
   }
-
-  console.log('cssClass', cssClass);
   return (
     <div className={cssClass} id="display-error">
       <h1>Camera error: {errorMsg}</h1>

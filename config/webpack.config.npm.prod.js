@@ -56,7 +56,7 @@ module.exports = {
   output: {
     // CRL: Updated whole block with library specific info
     path: paths.appBuild,
-    filename: 'index.js',
+    filename: 'src/demo/index.js',
     libraryTarget: 'umd'
   },
   resolve: {

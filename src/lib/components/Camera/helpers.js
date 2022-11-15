@@ -29,5 +29,5 @@ export function playClickAudio () {
 }
 
 export function printCameraInfo (info) {
-  console.info('react-html5-camera-photo info:', info);
+  // console.info('react-html5-camera-photo info:', info);
 }
