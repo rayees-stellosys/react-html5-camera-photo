@@ -35,6 +35,8 @@
   "homepage": "https://mabelanger.github.io/react-html5-camera-photo/",
   "license": "MIT",
   "dependencies": {
+    "ajv": "^8.11.2",
+    "ajv-keywords": "^5.1.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-lodash": "^3.3.2",
     "babel-plugin-react-transform": "^3.0.0",
