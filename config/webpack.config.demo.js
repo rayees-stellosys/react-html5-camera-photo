@@ -12,7 +12,7 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const TerserPlugin = require("terser-webpack-plugin");
-
+const UglifyJsPlugin = require("uglifyjs-3-webpack-plugin");
 
 const publicPath = paths.servedPath;
 
@@ -150,6 +150,16 @@ module.exports = {
       inject: true,
       template: paths.appHtml
     }),
+
+    new UglifyJsPlugin({
+      uglifyOptions: {
+      warnings: false,
+      ie8: false,
+      output: {
+      comments: false
+      }
+      }
+      }),
 
 
         new InterpolateHtmlPlugin(env.raw),

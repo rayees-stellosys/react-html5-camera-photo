@@ -4,8 +4,8 @@
   "description": "React.js HTML5 Camera Photo",
   "main": "build/index.js",
   "scripts": {
-    "start": "node scripts/start.js",
-    "start1": "react-scripts start",
+    "start1": "node scripts/start.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "buildHtml": "node scripts/buildHtml.js",
     "demo": "node scripts/demo.js",
@@ -43,7 +43,8 @@
     "html-webpack-plugin": "^5.5.0",
     "react-html5-camera-photo": "^1.5.10",
     "react-scripts": "^5.0.1",
-    "tesseract.js": "^2.1.5"
+    "tesseract.js": "^2.1.5",
+    "uglifyjs-3-webpack-plugin": "^1.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
